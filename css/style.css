@@ -6,3 +6,28 @@ On the rare occasion you need to override it, use something like the following:
   box-sizing: content-box;
 }
 */
+/*------------------HOME PAGE---------------HEADER----------------------------*/
+/*------------------SINGEL PAGE-------------HEADER----------------------------*/
+/*------------------HOME PAGE---------------MAIN------------------------------*/
+.product img, .shop img {
+  width: 100%;
+}
+
+.product {
+  margin: 20px 0px;
+}
+.shop {
+  padding: 0;
+}
+
+/*------------------HOME PAGE---------------FOOTER----------------------------*/
+footer {
+  background-color: #5d4037;
+  margin: 20px 0 0 0;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/*------------------BEEHAPPY PAGE---------------------------------------------*/
+/*------------------ABOUT US PAGE---------------------------------------------*/
+/*------------------CONTACT PAGE----------------------------------------------*/

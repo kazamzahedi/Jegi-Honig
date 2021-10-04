@@ -1,0 +1,82 @@
+// Variable
+
+//-------------------------
+// breakpoint size
+//-------------------------
+$breakpoint-xs: 500px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1025px;
+$breakpoint-lg: 1300px;
+//-------------------------
+// color
+//-------------------------
+$blue: #2962ff;
+$dark-blue: #0039cb;
+$light-blue: #768fff;
+$grey: #424242;
+$light-grey: #313131;
+$light-grey-text: #bbbbbb;
+$light-grey-border: #bdbdbd;
+$white: #fff;
+$black: #000;
+$red: #d32f2f;
+
+//-------------------------
+// font size
+//-------------------------
+$sectionHeading : 24px;
+
+
+/* 
+BOX-sizing
+On the rare occasion you need to override it, use something like the following:
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+*/
+
+
+/*------------------HOME PAGE---------------HEADER----------------------------*/
+
+/*------------------SINGEL PAGE-------------HEADER----------------------------*/
+
+/*------------------HOME PAGE---------------MAIN------------------------------*/
+.product img, .shop img {
+    width: 100%
+  }
+  
+//--------------------------
+// Product
+//--------------------------
+.product {
+    margin: 20px 0px;
+    &__body{
+
+    }
+}
+
+//--------------------------
+// shop
+//--------------------------
+
+.shop {
+    padding: 0;
+}
+
+
+
+/*------------------HOME PAGE---------------FOOTER----------------------------*/
+footer {
+    background-color: #5d4037;
+    margin: 20px 0 0 0;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+
+/*------------------BEEHAPPY PAGE---------------------------------------------*/
+
+/*------------------ABOUT US PAGE---------------------------------------------*/
+
+/*------------------CONTACT PAGE----------------------------------------------*/
