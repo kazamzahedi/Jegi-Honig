@@ -29,6 +29,20 @@ On the rare occasion you need to override it, use something like the following:
 */
 /*------------------HOME PAGE---------------HEADER----------------------------*/
 /*------------------SINGEL PAGE-------------HEADER----------------------------*/
+.banner {
+  background-color: #5d4037;
+  min-height: 200px;
+}
+.banner__body {
+  background-image: url("../content/banner01.jpg");
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+.banner__title {
+  margin: 20px 0;
+}
+
 /*------------------HOME PAGE---------------MAIN------------------------------*/
 .product img, .shop img {
   width: 100%;
@@ -37,18 +51,36 @@ On the rare occasion you need to override it, use something like the following:
 .product {
   margin: 20px 0px;
 }
+.product__body {
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+}
+.product__title {
+  margin-top: 20px;
+}
+
 .shop {
   padding: 0;
 }
 
 /*------------------HOME PAGE---------------FOOTER----------------------------*/
-footer {
+.footer {
   background-color: #5d4037;
   margin: 20px 0 0 0;
   padding: 20px 10px;
   text-align: center;
 }
+.footer__copyright p {
+  color: #fff;
+  margin: 20px 0;
+}
 
-/*------------------BEEHAPPY PAGE---------------------------------------------*/
-/*------------------ABOUT US PAGE---------------------------------------------*/
-/*------------------CONTACT PAGE----------------------------------------------*/
+/*----------------------------------------BEEHAPPY PAGE------------------------*/
+/*----------------------------------------ABOUT US PAGE------------------------*/
+/*----------------------------------------CONTACT PAGE-------------------------*/
+.form__group {
+  margin: 20px 10px;
+}
+.form__button {
+  margin: 10px;
+}
