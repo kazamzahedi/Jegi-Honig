@@ -1,0 +1,12 @@
+@mixin banner {
+    background-color: #5d4037;
+    min-height: 200px;
+    &__body {
+      background-position: center;
+      color: #fff;
+      text-align: center;
+    }
+    &__title {
+      margin: 20px 0;
+    }
+}

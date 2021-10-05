@@ -34,13 +34,47 @@ On the rare occasion you need to override it, use something like the following:
   min-height: 200px;
 }
 .banner__body {
-  background-image: url("../content/banner01.jpg");
   background-position: center;
   color: #fff;
   text-align: center;
 }
 .banner__title {
   margin: 20px 0;
+}
+.banner__body {
+  background-image: url("../content/banner01.jpg");
+}
+
+.banner-beehappy {
+  background-color: #5d4037;
+  min-height: 200px;
+}
+.banner-beehappy__body {
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+.banner-beehappy__title {
+  margin: 20px 0;
+}
+.banner-beehappy__body {
+  background-image: url("../content/banner02.jpg");
+}
+
+.banner-contactus {
+  background-color: #5d4037;
+  min-height: 200px;
+}
+.banner-contactus__body {
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+.banner-contactus__title {
+  margin: 20px 0;
+}
+.banner-contactus__body {
+  background-image: url("../content/banner03.jpg");
 }
 
 /*------------------HOME PAGE---------------MAIN------------------------------*/
@@ -57,10 +91,6 @@ On the rare occasion you need to override it, use something like the following:
 }
 .product__title {
   margin-top: 20px;
-}
-
-.shop {
-  padding: 0;
 }
 
 /*------------------HOME PAGE---------------FOOTER----------------------------*/
