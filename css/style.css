@@ -45,19 +45,19 @@ On the rare occasion you need to override it, use something like the following:
   background-image: url("../content/banner01.jpg");
 }
 
-.banner-beehappy {
+.banner-product {
   background-color: #5d4037;
   min-height: 200px;
 }
-.banner-beehappy__body {
+.banner-product__body {
   background-position: center;
   color: #fff;
   text-align: center;
 }
-.banner-beehappy__title {
+.banner-product__title {
   margin: 20px 0;
 }
-.banner-beehappy__body {
+.banner-product__body {
   background-image: url("../content/banner02.jpg");
 }
 
@@ -77,19 +77,35 @@ On the rare occasion you need to override it, use something like the following:
   background-image: url("../content/banner03.jpg");
 }
 
+.banner-aboutus {
+  background-color: #5d4037;
+  min-height: 200px;
+}
+.banner-aboutus__body {
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+.banner-aboutus__title {
+  margin: 20px 0;
+}
+.banner-aboutus__body {
+  background-image: url("../content/banner04.jpg");
+}
+
 /*------------------HOME PAGE---------------MAIN------------------------------*/
-.product img, .shop img {
+.mainparts img, .shop img {
   width: 100%;
 }
 
-.product {
+.mainparts {
   margin: 20px 0px;
 }
-.product__body {
+.mainparts__body {
   border-bottom: 1px solid #000;
   padding-bottom: 20px;
 }
-.product__title {
+.mainparts__title {
   margin-top: 20px;
 }
 
@@ -139,7 +155,25 @@ On the rare occasion you need to override it, use something like the following:
   margin: 20px 0;
 }
 
-/*----------------------------------------BEEHAPPY PAGE------------------------*/
+/*----------------------------------------OUR PRODUCT------------------------*/
+.product {
+  padding: 15px;
+}
+.product__header {
+  text-align: center;
+  font-size: 26px;
+}
+.product__body {
+  margin: 10px 0px;
+  -webkit-box-shadow: 0px 0px 5px #e0e0e0;
+          box-shadow: 0px 0px 5px #e0e0e0;
+  padding: 10px 10px;
+}
+.product__title {
+  color: green;
+  font-size: 22px;
+}
+
 /*----------------------------------------ABOUT US PAGE------------------------*/
 /*----------------------------------------CONTACT PAGE-------------------------*/
 .form__group {

@@ -22,7 +22,7 @@ On the rare occasion you need to override it, use something like the following:
       background-image: url('../content/banner01.jpg');
     }
 }
-.banner-beehappy {
+.banner-product {
   @include banner;
   &__body {
     background-image: url('../content/banner02.jpg');
@@ -34,14 +34,20 @@ On the rare occasion you need to override it, use something like the following:
     background-image: url('../content/banner03.jpg');
   }
 }
+.banner-aboutus {
+  @include banner;
+  &__body {
+    background-image: url('../content/banner04.jpg');
+  }
+}
 /*------------------HOME PAGE---------------MAIN------------------------------*/
-.product img, .shop img {
+.mainparts img, .shop img {
   width: 100%;
 }
 //--------------------------
-// Product
+// MAINPARTS
 //--------------------------
-.product {
+.mainparts {
     margin: 20px 0px;
     &__body{
       border-bottom: 1px solid #000;
@@ -53,7 +59,7 @@ On the rare occasion you need to override it, use something like the following:
 }
 
 //--------------------------
-// shop
+// SHOP
 //--------------------------
 
 .shop {
@@ -106,7 +112,23 @@ On the rare occasion you need to override it, use something like the following:
 
     }
   }
-/*----------------------------------------BEEHAPPY PAGE------------------------*/
+/*----------------------------------------OUR PRODUCT------------------------*/
+.product {
+  padding: 15px;
+  &__header {
+    text-align: center;
+    font-size: 26px;
+  }
+  &__body {
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px #e0e0e0;
+    padding: 10px 10px;
+  }
+  &__title {
+    color: green;
+    font-size: 22px;
+  }
+}
 
 /*----------------------------------------ABOUT US PAGE------------------------*/
 
