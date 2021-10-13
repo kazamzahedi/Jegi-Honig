@@ -11,7 +11,10 @@ On the rare occasion you need to override it, use something like the following:
 }
 */
 
-
+body {
+  //background-image: url('../content/back-img.gif');
+  //background-color: #000;
+}
 /*------------------HOME PAGE---------------HEADER----------------------------*/
 
 
@@ -48,7 +51,7 @@ On the rare occasion you need to override it, use something like the following:
 // MAINPARTS
 //--------------------------
 .mainparts {
-    margin: 20px 0px;
+    margin: 30px 0px;
     &__body{
       border-bottom: 1px solid #000;
       padding-bottom: 20px;
@@ -140,5 +143,72 @@ On the rare occasion you need to override it, use something like the following:
   }
   &__button{
     margin: 10px;
+  }
+}
+
+/*-------------------------------------------------Medium devices-----------------------------------------------*/
+@media (min-width: 768px) {
+/*--------------------------header-----------*/
+  header {
+    padding: 0 20px;
+  }
+/*------------------------Slideshow-----------*/
+  .carousel  {
+    padding: 0px;
+  }
+/*------------------------mainparts-----------*/
+  .mainparts {
+    
+    &__body {
+      box-shadow: 0 0 5px #e0e0e0 ;
+      padding: 10px;
+      border: none;
+    }
+  }
+/*------------------------shop-----------------*/
+  .shop {
+    height: 300px;
+  }
+
+}
+/*-------------------------------------------------Large devices-------------------------------------------------*/
+@media (min-width: 992px) {
+  //-----------------------------header
+  header{
+    padding: 0px;
+    background-color:#5d4037;
+  }
+  .bg-light {
+    max-width: 960px;
+    margin: 0px auto;
+    --bs-bg-opacity: none;
+  }
+  .navbar-expand-lg .navbar-collapse{
+    display: contents !important;
+  }
+  //----------------------------header singelPage
+  .banner, .banner-product, .banner-aboutus, .banner-contactus {
+    min-height: 250px;
+  }
+  .product {
+    padding: 20px 0px;
+    &__body {
+      padding: 20px 10px;
+    }
+  }
+}
+
+/*-------------------------------------------------X-Large devices-------------------------------------------------*/
+@media (min-width: 1200px) {
+  //-----------------------------header
+  .bg-light {
+    max-width: 1140px;
+  }
+}
+/*-------------------------------------------------XX-Large devices-------------------------------------------------*/
+@media (min-width: 1200px) {
+  //-----------------------------header
+  .bg-light {
+    max-width: 1320px;
   }
 }
