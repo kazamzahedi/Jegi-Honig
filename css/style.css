@@ -28,6 +28,40 @@ On the rare occasion you need to override it, use something like the following:
 }
 */
 /*------------------HOME PAGE---------------HEADER----------------------------*/
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-brand {
+  color: #000;
+}
+
+.navbar-brand {
+  font-family: "Suez One", serif;
+  font-size: 2.2em;
+}
+.navbar-brand span {
+  text-shadow: 1px 1px 20px #ffd119ff;
+  color: #ff8c00ff;
+}
+
+.nav-item {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.7em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f55a43ff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ff8c00ff;
+}
+
 /*------------------SINGEL PAGE-------------HEADER----------------------------*/
 .banner {
   background-color: #5d4037;
@@ -94,6 +128,10 @@ On the rare occasion you need to override it, use something like the following:
 }
 
 /*------------------HOME PAGE---------------MAIN------------------------------*/
+.meinpart {
+  padding: 0 20px;
+}
+
 .mainparts img, .shop img {
   width: 100%;
 }
@@ -104,9 +142,19 @@ On the rare occasion you need to override it, use something like the following:
 .mainparts__body {
   border-bottom: 1px solid #000;
   padding-bottom: 20px;
+  background-color: #fff;
 }
 .mainparts__title {
   margin-top: 20px;
+}
+.mainparts__link {
+  background-color: #ffd119ff;
+  border-color: #ffd119ff;
+  color: #000;
+}
+.mainparts__link:hover {
+  background-color: #ff8c00ff;
+  border-color: #ff8c00ff;
 }
 
 .shop {
@@ -128,30 +176,22 @@ On the rare occasion you need to override it, use something like the following:
           transform: translate(-50%, -50%);
   color: white;
 }
-.shop__text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-.shop__text button:hover {
-  background-color: #555;
-  color: white;
-}
 
 /*------------------HOME PAGE---------------FOOTER----------------------------*/
 .footer {
-  background-color: #5d4037;
-  margin: 20px 0 0 0;
-  padding: 20px 10px;
+  background-color: #f5f5f5ff;
+  margin: 0;
+  padding: 20px 10px 10px 10px;
   text-align: center;
 }
+.footer__content {
+  padding: 20px 0;
+}
+.footer__maps {
+  border: 5px solid #ff8c00ff;
+}
 .footer__copyright p {
-  color: #fff;
+  color: #ff8c00ff;
   margin: 20px 0;
 }
 
@@ -168,6 +208,7 @@ On the rare occasion you need to override it, use something like the following:
   -webkit-box-shadow: 0px 0px 5px #e0e0e0;
           box-shadow: 0px 0px 5px #e0e0e0;
   padding: 10px 10px;
+  background-color: #fff;
 }
 .product__title {
   color: green;
@@ -196,10 +237,19 @@ On the rare occasion you need to override it, use something like the following:
   }
 
   /*------------------------mainparts-----------*/
+  .container-size {
+    max-width: 100%;
+  }
+
+  .container-size-main {
+    max-width: 736px;
+    margin: auto;
+  }
+
   .mainparts__body {
-    -webkit-box-shadow: 0 0 5px #e0e0e0;
-            box-shadow: 0 0 5px #e0e0e0;
-    padding: 10px;
+    -webkit-box-shadow: 0 0 15px #c2c2c2ff;
+            box-shadow: 0 0 15px #c2c2c2ff;
+    padding: 2em;
     border: none;
   }
 
@@ -207,12 +257,14 @@ On the rare occasion you need to override it, use something like the following:
   .shop {
     height: 300px;
   }
+
+  /*------------------------footer------------------*/
 }
 /*-------------------------------------------------Large devices-------------------------------------------------*/
 @media (min-width: 992px) {
-  header {
+  .header {
+    background-color: #f5f5f5ff;
     padding: 0px;
-    background-color: #5d4037;
   }
 
   .bg-light {
@@ -225,6 +277,33 @@ On the rare occasion you need to override it, use something like the following:
     display: contents !important;
   }
 
+  .carousel {
+    height: 90%;
+  }
+
+  .carousel-inner {
+    max-height: 850px;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 1rem;
+  }
+
+  .carousel-caption {
+    bottom: 37%;
+    top: 42%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 55%;
+    margin: auto;
+    border: 1px solid #ff8c00ff;
+  }
+  .carousel-caption h5 {
+    font-size: 2.2em;
+  }
+  .carousel-caption p {
+    font-size: 1em;
+  }
+
   .banner, .banner-product, .banner-aboutus, .banner-contactus {
     min-height: 250px;
   }
@@ -235,16 +314,39 @@ On the rare occasion you need to override it, use something like the following:
   .product__body {
     padding: 20px 10px;
   }
+
+  .container-size-main {
+    max-width: 976px;
+  }
 }
 /*-------------------------------------------------X-Large devices-------------------------------------------------*/
 @media (min-width: 1200px) {
   .bg-light {
     max-width: 1140px;
   }
+
+  .container-size-main {
+    max-width: 1150px;
+  }
 }
 /*-------------------------------------------------XX-Large devices-------------------------------------------------*/
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .bg-light {
     max-width: 1320px;
+  }
+
+  .container-size-main {
+    max-width: 1335px;
+  }
+
+  .carousel-caption {
+    bottom: 65%;
+    top: 15%;
+  }
+  .carousel-caption h5 {
+    font-size: 4em;
+  }
+  .carousel-caption p {
+    font-size: 2em;
   }
 }

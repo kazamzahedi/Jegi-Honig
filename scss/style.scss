@@ -16,7 +16,35 @@ body {
   //background-color: #000;
 }
 /*------------------HOME PAGE---------------HEADER----------------------------*/
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-brand {
+  color: $black;
+}
+.navbar-brand {
+  font-family: $font-family-logo;
+  font-size: $font-36-xlarge;
+  span {
+    text-shadow: 1px 1px 20px $cyber-yellow;
+    color: $dark-orange;
+  }
+}
 
+.nav-item {
+  font-family: $font-family-menu;
+  font-weight: 400;
+  font-size: $font-28-large;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: $black;
+  &:hover {
+    color: $orange-soda;
+  }
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: $dark-orange;
+}
 
 /*------------------SINGEL PAGE-------------HEADER----------------------------*/
 .banner {
@@ -44,6 +72,10 @@ body {
   }
 }
 /*------------------HOME PAGE---------------MAIN------------------------------*/
+.meinpart {
+  padding: 0 20px;
+}
+
 .mainparts img, .shop img {
   width: 100%;
 }
@@ -55,9 +87,19 @@ body {
     &__body{
       border-bottom: 1px solid #000;
       padding-bottom: 20px;
+      background-color: #fff;
     }
     &__title {
       margin-top: 20px
+    }
+    &__link {
+      background-color: $cyber-yellow;
+      border-color: $cyber-yellow;
+      color: $black;
+      &:hover {
+        background-color: $dark-orange;
+        border-color: $dark-orange;
+      }
     }
 }
 
@@ -81,20 +123,6 @@ body {
     transform: translate(-50%, -50%);
     color: white;
 
-    button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 10px 25px;
-      color: black;
-      background-color: #ddd;
-      text-align: center;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #555;
-      color: white;
-    }
   }
 }
 
@@ -102,14 +130,20 @@ body {
 
 /*------------------HOME PAGE---------------FOOTER----------------------------*/
 .footer {
-    background-color: #5d4037;
-    margin: 20px 0 0 0;
-    padding: 20px 10px;
+    @include headerfooterbackcolor;
+    margin: 0;
+    padding: 20px 10px 10px 10px;
     text-align: center;
+    &__content {
+      padding: 20px 0;
+    }
+    &__maps {
+      border: 5px solid $dark-orange;
+    }
     &__copyright {
 
       p {
-        color: #fff;
+        color: $dark-orange;
         margin: 20px 0;
       }
 
@@ -126,6 +160,7 @@ body {
     margin: 10px 0px;
     box-shadow: 0px 0px 5px #e0e0e0;
     padding: 10px 10px;
+    background-color: #fff;
   }
   &__title {
     color: green;
@@ -157,26 +192,38 @@ body {
     padding: 0px;
   }
 /*------------------------mainparts-----------*/
-  .mainparts {
+.container-size {
+  max-width: 100%;
+}  
+.container-size-main {
+  max-width: 736px;
+  margin: auto;
+}
+.mainparts {
     
     &__body {
-      box-shadow: 0 0 5px #e0e0e0 ;
-      padding: 10px;
+      box-shadow: 0 0 15px $silver;
+      padding: 2em;
       border: none;
+      }
     }
-  }
 /*------------------------shop-----------------*/
   .shop {
     height: 300px;
   }
-
+/*------------------------footer------------------*/
+  .footer {
+    &__maps {
+      
+    }
+  }
 }
 /*-------------------------------------------------Large devices-------------------------------------------------*/
 @media (min-width: 992px) {
   //-----------------------------header
-  header{
+  .header{
+    @include headerfooterbackcolor;
     padding: 0px;
-    background-color:#5d4037;
   }
   .bg-light {
     max-width: 960px;
@@ -186,6 +233,31 @@ body {
   .navbar-expand-lg .navbar-collapse{
     display: contents !important;
   }
+  //----------------------------header homegape
+  .carousel {
+    height: 90%;
+  }
+  .carousel-inner {
+    max-height: 850px;
+  }
+  .carousel-indicators {
+    margin-bottom: 1rem;
+  }
+  .carousel-caption {
+    bottom: 37%;
+    top: 42%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 55%;
+    margin: auto;
+    border: 1px solid $dark-orange;
+    h5 {
+      font-size: $font-36-xlarge;
+    }
+    p {
+      font-size: $font-16-small;
+    }
+  }
+
   //----------------------------header singelPage
   .banner, .banner-product, .banner-aboutus, .banner-contactus {
     min-height: 250px;
@@ -196,6 +268,14 @@ body {
       padding: 20px 10px;
     }
   }
+  .container-size-main {
+    max-width: 976px;
+  } 
+  //-------------------------------footer
+  .footer {
+  
+  }
+  
 }
 
 /*-------------------------------------------------X-Large devices-------------------------------------------------*/
@@ -204,11 +284,42 @@ body {
   .bg-light {
     max-width: 1140px;
   }
+
+  .container-size-main {
+    max-width: 1150px;
+  } 
+
+  //---------------------------footer
+  .footer {
+   
+  }
+  
 }
 /*-------------------------------------------------XX-Large devices-------------------------------------------------*/
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   //-----------------------------header
   .bg-light {
     max-width: 1320px;
   }
+
+  .container-size-main {
+    max-width: 1335px;
+  } 
+
+  .carousel-caption {
+    bottom: 65%;
+    top: 15%;
+    h5 {
+      font-size: 4em;
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+
+  //----------------------------footer
+  .footer {
+   
+  }
+  
 }

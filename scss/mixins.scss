@@ -10,3 +10,7 @@
       margin: 20px 0;
     }
 }
+
+@mixin headerfooterbackcolor {
+  background-color: $cultured;
+}
