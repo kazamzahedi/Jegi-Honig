@@ -151,7 +151,7 @@ body {
   }
 /*----------------------------------------OUR PRODUCT------------------------*/
 .product {
-  padding: 15px;
+  padding: 37px !important;
   &__header {
     text-align: center;
     font-size: 26px;
@@ -163,14 +163,42 @@ body {
     background-color: #fff;
   }
   &__title {
-    color: green;
+    color: $dark-orange;
     font-size: 22px;
   }
 }
 
 /*----------------------------------------ABOUT US PAGE------------------------*/
-
+.about-us {
+  min-height: 500px;
+  padding: 40px 0;
+  h3 {
+    font-family: $font-family-menu;
+    font-size: $font-36-xlarge;
+  }
+  p {
+    font-family: $font-family-menu;
+    font-size: $font-16-small;
+    line-height: 2em;
+  }
+}
 /*----------------------------------------CONTACT PAGE-------------------------*/
+.contact-us {
+  padding: 20px;
+  font-family: $font-family-menu;
+  h4 {
+    font-size: $font-28-large;
+    padding: 20px 0;
+  }
+  h3 {
+    font-size: $font-36-xlarge;
+    padding: 20px 0;
+  }
+  p {
+    font-size: $font-16-small
+  }
+}
+
 
 .form {
   &__group{
@@ -263,7 +291,7 @@ body {
     min-height: 250px;
   }
   .product {
-    padding: 20px 0px;
+    padding: 25px;
     &__body {
       padding: 20px 10px;
     }

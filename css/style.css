@@ -197,7 +197,7 @@ On the rare occasion you need to override it, use something like the following:
 
 /*----------------------------------------OUR PRODUCT------------------------*/
 .product {
-  padding: 15px;
+  padding: 37px !important;
 }
 .product__header {
   text-align: center;
@@ -211,12 +211,42 @@ On the rare occasion you need to override it, use something like the following:
   background-color: #fff;
 }
 .product__title {
-  color: green;
+  color: #ff8c00ff;
   font-size: 22px;
 }
 
 /*----------------------------------------ABOUT US PAGE------------------------*/
+.about-us {
+  min-height: 500px;
+  padding: 40px 0;
+}
+.about-us h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2em;
+}
+.about-us p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+}
+
 /*----------------------------------------CONTACT PAGE-------------------------*/
+.contact-us {
+  padding: 20px;
+  font-family: "Oswald", sans-serif;
+}
+.contact-us h4 {
+  font-size: 1.7em;
+  padding: 20px 0;
+}
+.contact-us h3 {
+  font-size: 2.2em;
+  padding: 20px 0;
+}
+.contact-us p {
+  font-size: 1em;
+}
+
 .form__group {
   margin: 20px 10px;
 }
@@ -309,7 +339,7 @@ On the rare occasion you need to override it, use something like the following:
   }
 
   .product {
-    padding: 20px 0px;
+    padding: 25px;
   }
   .product__body {
     padding: 20px 10px;
