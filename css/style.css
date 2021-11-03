@@ -38,7 +38,7 @@ On the rare occasion you need to override it, use something like the following:
 
 .navbar-brand {
   font-family: "Suez One", serif;
-  font-size: 2.2em;
+  font-size: 1.7em;
 }
 .navbar-brand span {
   text-shadow: 1px 1px 20px #ffd119ff;
@@ -124,7 +124,7 @@ On the rare occasion you need to override it, use something like the following:
   margin: 20px 0;
 }
 .banner-aboutus__body {
-  background-image: url("../content/banner04.jpg");
+  background-image: url("../content/banner01.jpg");
 }
 
 /*------------------HOME PAGE---------------MAIN------------------------------*/
@@ -218,7 +218,7 @@ On the rare occasion you need to override it, use something like the following:
 /*----------------------------------------ABOUT US PAGE------------------------*/
 .about-us {
   min-height: 500px;
-  padding: 40px 0;
+  padding: 40px 15px;
 }
 .about-us h3 {
   font-family: "Oswald", sans-serif;
@@ -226,8 +226,12 @@ On the rare occasion you need to override it, use something like the following:
 }
 .about-us p {
   font-family: "Oswald", sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 2em;
+}
+
+.banner-aboutus {
+  margin: 0px;
 }
 
 /*----------------------------------------CONTACT PAGE-------------------------*/
@@ -259,6 +263,10 @@ On the rare occasion you need to override it, use something like the following:
   /*--------------------------header-----------*/
   header {
     padding: 0 20px;
+  }
+
+  .navbar-brand {
+    font-size: 2.2em;
   }
 
   /*------------------------Slideshow-----------*/
@@ -335,7 +343,11 @@ On the rare occasion you need to override it, use something like the following:
   }
 
   .banner, .banner-product, .banner-aboutus, .banner-contactus {
-    min-height: 250px;
+    min-height: 400px;
+  }
+
+  .banner-contactus__body, .banner-aboutus__body, .banner-product__body {
+    padding-top: 8%;
   }
 
   .product {

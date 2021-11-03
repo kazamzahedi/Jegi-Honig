@@ -24,7 +24,7 @@ body {
 }
 .navbar-brand {
   font-family: $font-family-logo;
-  font-size: $font-36-xlarge;
+  font-size: $font-28-large;
   span {
     text-shadow: 1px 1px 20px $cyber-yellow;
     color: $dark-orange;
@@ -68,7 +68,7 @@ body {
 .banner-aboutus {
   @include banner;
   &__body {
-    background-image: url('../content/banner04.jpg');
+    background-image: url('../content/banner01.jpg');
   }
 }
 /*------------------HOME PAGE---------------MAIN------------------------------*/
@@ -171,16 +171,19 @@ body {
 /*----------------------------------------ABOUT US PAGE------------------------*/
 .about-us {
   min-height: 500px;
-  padding: 40px 0;
+  padding: 40px 15px;
   h3 {
     font-family: $font-family-menu;
     font-size: $font-36-xlarge;
   }
   p {
     font-family: $font-family-menu;
-    font-size: $font-16-small;
+    font-size: $font-24-medium;
     line-height: 2em;
   }
+}
+.banner-aboutus {
+  margin: 0px;
 }
 /*----------------------------------------CONTACT PAGE-------------------------*/
 .contact-us {
@@ -215,6 +218,10 @@ body {
   header {
     padding: 0 20px;
   }
+  .navbar-brand {
+    font-size: $font-36-xlarge;
+  }
+  
 /*------------------------Slideshow-----------*/
   .carousel  {
     padding: 0px;
@@ -288,7 +295,10 @@ body {
 
   //----------------------------header singelPage
   .banner, .banner-product, .banner-aboutus, .banner-contactus {
-    min-height: 250px;
+    min-height: 400px;
+  }
+  .banner-contactus__body, .banner-aboutus__body, .banner-product__body {
+    padding-top: 8%;
   }
   .product {
     padding: 25px;
