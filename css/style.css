@@ -385,8 +385,8 @@ On the rare occasion you need to override it, use something like the following:
   }
 
   .carousel-caption {
-    bottom: 65%;
-    top: 15%;
+    bottom: 55%;
+    padding: 15px;
   }
   .carousel-caption h5 {
     font-size: 4em;
