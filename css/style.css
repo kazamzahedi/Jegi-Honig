@@ -194,6 +194,9 @@ On the rare occasion you need to override it, use something like the following:
   color: #ff8c00ff;
   margin: 20px 0;
 }
+.footer a {
+  color: #000;
+}
 
 /*----------------------------------------OUR PRODUCT------------------------*/
 .product {
@@ -329,7 +332,7 @@ On the rare occasion you need to override it, use something like the following:
 
   .carousel-caption {
     bottom: 37%;
-    top: 42%;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 55%;
     margin: auto;

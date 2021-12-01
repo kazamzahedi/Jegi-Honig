@@ -148,6 +148,9 @@ body {
       }
 
     }
+    a {
+      color: $black;
+    }
   }
 /*----------------------------------------OUR PRODUCT------------------------*/
 .product {
@@ -280,7 +283,7 @@ body {
   }
   .carousel-caption {
     bottom: 37%;
-    top: 42%;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 55%;
     margin: auto;
