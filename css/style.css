@@ -389,7 +389,7 @@ On the rare occasion you need to override it, use something like the following:
     padding: 15px;
   }
   .carousel-caption h5 {
-    font-size: 4em;
+    font-size: 3em;
   }
   .carousel-caption p {
     font-size: 2em;
