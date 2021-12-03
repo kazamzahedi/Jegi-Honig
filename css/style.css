@@ -148,13 +148,13 @@ On the rare occasion you need to override it, use something like the following:
   margin-top: 20px;
 }
 .mainparts__link {
-  background-color: #ffd119ff;
-  border-color: #ffd119ff;
+  background-color: #ff8c00ff;
+  border-color: #ff8c00ff;
   color: #000;
 }
 .mainparts__link:hover {
-  background-color: #ff8c00ff;
-  border-color: #ff8c00ff;
+  background-color: #ffd119ff;
+  border-color: #ffd119ff;
 }
 
 .shop {

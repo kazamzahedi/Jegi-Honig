@@ -93,12 +93,12 @@ body {
       margin-top: 20px
     }
     &__link {
-      background-color: $cyber-yellow;
-      border-color: $cyber-yellow;
+      background-color: $dark-orange;
+      border-color: $dark-orange;
       color: $black;
       &:hover {
-        background-color: $dark-orange;
-        border-color: $dark-orange;
+        background-color: $cyber-yellow;
+        border-color: $cyber-yellow;
       }
     }
 }
