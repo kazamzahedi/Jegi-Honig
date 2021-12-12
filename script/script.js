@@ -4,5 +4,16 @@ $(document).ready(function() {
     var carousel = new bootstrap.Carousel(myCarousel, {
         interval: 10000,
     });
+    
+    var carouselItem = document.getElementsByClassName('carousel-item');
+    
+    carouselItem.classList.add('adf');
+    console.log("movein");
+    var carouselCaption = document.getElementsByClassName('.carousel-pation');
+    
+    if (condition) {
+        
+    }
+
 
 });

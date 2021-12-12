@@ -46,6 +46,18 @@ body {
   color: $dark-orange;
 }
 
+.movein {
+  position: relative;
+  animation-name: moveup;
+  animation-duration : 3s;
+  animation-delay : 2s;
+  animation-fill-mode: both;
+}
+@keyframes moveup {
+  from {top:0px; opacity: 0;}
+  to {top: 200px; opacity: 1;}
+}
+
 /*------------------SINGEL PAGE-------------HEADER----------------------------*/
 .banner {
     @include banner;
