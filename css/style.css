@@ -62,14 +62,14 @@ On the rare occasion you need to override it, use something like the following:
   color: #ff8c00ff;
 }
 
-.movein {
-  position: relative;
+.moveselector {
+  height: 260px;
   -webkit-animation-name: moveup;
           animation-name: moveup;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -80,7 +80,7 @@ On the rare occasion you need to override it, use something like the following:
     opacity: 0;
   }
   to {
-    top: 200px;
+    top: 400px;
     opacity: 1;
   }
 }
@@ -91,7 +91,7 @@ On the rare occasion you need to override it, use something like the following:
     opacity: 0;
   }
   to {
-    top: 200px;
+    top: 400px;
     opacity: 1;
   }
 }
